@@ -13,6 +13,7 @@
 		D6E2F09D24710CAE00558A3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E2F09B24710CAE00558A3F /* Main.storyboard */; };
 		D6E2F09F24710CB000558A3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6E2F09E24710CB000558A3F /* Assets.xcassets */; };
 		D6E2F0A224710CB000558A3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E2F0A024710CB000558A3F /* LaunchScreen.storyboard */; };
+		D6E2F0AB24710D5F00558A3F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E2F0AA24710D5F00558A3F /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D6E2F09E24710CB000558A3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6E2F0A124710CB000558A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6E2F0A324710CB000558A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6E2F0AA24710D5F00558A3F /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		D6E2F09424710CAE00558A3F /* CalcApp */ = {
 			isa = PBXGroup;
 			children = (
+				D6E2F0A924710D2000558A3F /* Model */,
 				D6E2F09524710CAE00558A3F /* AppDelegate.swift */,
 				D6E2F09724710CAE00558A3F /* SceneDelegate.swift */,
 				D6E2F09924710CAE00558A3F /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				D6E2F0A324710CB000558A3F /* Info.plist */,
 			);
 			path = CalcApp;
+			sourceTree = "<group>";
+		};
+		D6E2F0A924710D2000558A3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6E2F0AA24710D5F00558A3F /* Car.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				D6E2F09A24710CAE00558A3F /* ViewController.swift in Sources */,
 				D6E2F09624710CAE00558A3F /* AppDelegate.swift in Sources */,
+				D6E2F0AB24710D5F00558A3F /* Car.swift in Sources */,
 				D6E2F09824710CAE00558A3F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +306,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.yuta5196.CalcApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.yuta5196.CalcApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
